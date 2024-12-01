@@ -1,193 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="./scripts.js"></script>
-    <link rel="icon" type="image/jpg" href="./Images/anshul.jpg">
-</head>
-<body>
+    <link rel="icon" type="image/jpg" href="./Images/anshul.jpg" />
+  </head>
+  <body>
     <header>
-        <a href="#" class="logo-holder">
-            <div class ="logo">A</div>
-            <div class ="logo-text">My Portfolio</div>
+      <a href="#" class="logo-holder">
+        <div class="logo">A</div>
+        <div class="logo-text">My Portfolio</div>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a href="mailto:anshulk0102@gmail.com">Contact Me</a>
+          </li>
+        </ul>
+        <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h10"
+            />
+          </svg>
         </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#testimonials">Testimonials</a>
-                </li>
-                <li>
-                    <a href="mailto:anshulk0102@gmail.com">Contact Me</a>
-                </li>
-            </ul>
-            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
-				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
-				</svg>
-			</a>
-        </nav>
+      </nav>
     </header>
-    <main>
-        <section class="hero-container">
-            <div class="hero-blue">
-                <div class="content">
-                    <h1>
-                        <small>Hi, I'm</small> Anshul Kumar
-                    </h1>
-                    <p>
-                        A 3rd-year B.Tech CSE student passionate about becoming a skilled Machine Learning or Software Engineer. 
-                        <span>I am proficient in data science, machine learning, and have hands-on experience with large language models, generative AI, and web technologies.</span>
-                        <span>Outside of tech, I enjoy solving puzzles, reading tech articles, and playing outdoor sports.</span>
-                    </p>
-                    <p>
-                        <strong>College Name:</strong> Indian Institute of Information Technology, Pune <br>
-                        <strong>Branch:</strong> Computer Science and Engineering
-                    </p>
-                    
-                    
-                    <div class="call-to-action">
-                        <a href="./Images/anshul_resume.pdf" class="button black">View Resume</a>
-                        <a href="mailto:hello@adriantwarog.com" class="button white">Contact Me</a>
-                    </div>
-                </div>
+    <div class="hero-section">
+      <section class="hero-container">
+        <div class="hero-blue">
+          <div class="content">
+            <h1><small>Hi, I'm</small> Anshul Kumar</h1>
+            <p>
+              A 3rd-year B.Tech CSE student passionate about becoming a skilled
+              Machine Learning or Software Engineer.
+              <span
+                >I am proficient in data science, machine learning, and have
+                hands-on experience with large language models, generative AI,
+                and web technologies.</span
+              >
+              <span
+                >Outside of tech, I enjoy solving puzzles, reading tech
+                articles, and playing outdoor sports.</span
+              >
+            </p>
+            <p>
+              <strong>College Name:</strong> Indian Institute of Information
+              Technology, Pune <br />
+              <strong>Branch:</strong> Computer Science and Engineering
+            </p>
+
+            <div class="call-to-action">
+              <a href="./Images/anshul_resume.pdf" class="button black"
+                >View Resume</a
+              >
+              <a href="mailto:hello@adriantwarog.com" class="button white"
+                >Contact Me</a
+              >
             </div>
-            <div class="profile-picture-container">
-                <img src="./Images/chill guy.jpg" alt="Anshul Kumar" class="profile-pic" />
-                <div class="social-links">
-                    <a href="https://github.com/Anshulk2004" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/anshul-kumar-627001250/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://leetcode.com/u/Anshulk0102/" target="_blank">
-                        <i class="fas fa-code"></i>
-                    </a>
+          </div>
+        </div>
+        <div class="profile-picture-container">
+          <img
+            src="./Images/chill guy.jpg"
+            alt="Anshul Kumar"
+            class="profile-pic"
+          />
+          <div class="social-links">
+            <a href="https://github.com/Anshulk2004" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/anshul-kumar-627001250/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://leetcode.com/u/Anshulk0102/" target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="skills" class="skills container">
+      <h2>Skills</h2>
+      <div class="holder-blue">
+        <div class="row">
+          <div class="column">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>C++</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Tools</h3>
+            <ul>
+              <li>Docker</li>
+              <li>Git/GitHub</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>TensorFlow</li>
+              <li>PyTorch</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Next.js</li>
+              <li>Flask</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Databases</h3>
+            <ul>
+              <li>MongoDB</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>Coursework</h3>
+            <ul>
+              <li>Operating Systems</li>
+              <li>DBMS</li>
+              <li>Computer Networks</li>
+              <li>OOPS</li>
+              <li>Data Structures and Algorithms</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Teamwork</li>
+              <li>Leadership</li>
+              <li>Time Management</li>
+              <li>Adaptability</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-experience container">
+      <h2>
+        <small>Work Experience</small>
+      </h2>
+      <div class="jobs">
+        <article>
+          <div class="role">Data Analyst Intern</div>
+          <figure>
+            <img src="./Images/Ozibook.jpg" alt="Ozibook" />
+            <figcaption>Ozibook</figcaption>
+          </figure>
+          <div class="date">2024 May - 2024 July</div>
+          <ul>
+            <li>
+              Led web scraping projects on LinkedIn to identify over 500 new
+              business leads, resulting in a 30% increase in potential client
+              contacts.
+            </li>
+            <li>
+              Created Excel Dashboards to visualize team progress as well as
+              managed a team of interns.
+            </li>
+          </ul>
+          <div class="icons">
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </article>
+        <article>
+          <div class="role">FullStack Developer Intern</div>
+          <figure>
+            <img
+              src="./Images/Screenshot 2024-11-30 231722.png"
+              alt="Oddminds Innovation"
+            />
+            <figcaption>Oddminds Innovation</figcaption>
+          </figure>
+          <div class="date">2024 August - 2024 October</div>
+          <ul>
+            <li>
+              Enhanced backend functionalities by integrating Firebase Storage,
+              Emulator, and Node.js, improving system efficiency and
+              scalability.
+            </li>
+            <li>
+              Developed frontend features using Next.js as well as other
+              frontend libraries for various components.
+            </li>
+          </ul>
+          <div class="icons">
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="projects" class="projects-section">
+        <h1 class="section-heading">Projects</h1>
+        <div class="project-cards-container">          
+          <div class="cta">
+            <div class="cta-inner">              
+              <div class="card-front">
+                <img
+                  src="https://images.unsplash.com/photo-1600078686889-8c42747c25fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzMjg5Nw&ixlib=rb-1.2.1&q=80&w=400"
+                  alt="Bluetit"
+                />
+                <div class="cta__text-column">
+                  <h2>ToneCraft</h2>
+                  <p>A project that leverages AI and ML to automate workflows and provide detailed analytics.</p>                  
                 </div>
+              </div>              
+              <div class="card-back">
+                <h2>About ToneCraft</h2>
+                <p>
+                  ToneCraft uses advanced ML techniques to improve automation and optimize analytics for businesses.
+                </p>
+                <ul>
+                  <li>Technologies: React, TensorFlow</li>
+                  <li>Duration: 4 months</li>
+                  <li>Impact: Improved workflow efficiency by 30%</li>
+                </ul>
+                <div class="external-links">
+                    <a href="https://github.com" target="_blank">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.example.com" target="_blank">
+                      <i class="fas fa-globe" aria-hidden="true"></i>
+                    </a>
+                  </div>
+              </div>
             </div>
-        </section>
-        <section id="skills" class="skills container">
-            <h2>
-                <small>About Me</small>
-                Skills
-            </h2>
-            <div class="holder-blue">
-                <div class="left-column">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>C++</li>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                    </ul>
-                    <h3>Frameworks</h3>
-                    <ul>
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li>React.js</li>
-                        <li>Node.js</li>
-                        <li>Next.js</li>
-                        <li>Flask</li>
-                    </ul>
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Docker</li>
-                        <li>Git/GitHub</li>
-                        <li>Linux</li>
-                    </ul>
-                    <h3>Databases</h3>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                    </ul>
-                    <h3>Coursework</h3>
-                    <ul>
-                        <li>Operating Systems</li>
-                        <li>DBMS</li>
-                        <li>Computer Networks</li>
-                        <li>OOPS</li>
-                        <li>Data Structures and Algorithms</li>
-                    </ul>
+          </div>
+
+          <div class="cta">
+            <div class="cta-inner">              
+              <div class="card-front">
+                <img
+                  src="https://images.unsplash.com/photo-1600078686889-8c42747c25fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzMjg5Nw&ixlib=rb-1.2.1&q=80&w=400"
+                  alt="Bluetit"
+                />
+                <div class="cta__text-column">
+                  <h2>ToneCraft</h2>
+                  <p>A project that leverages AI and ML to automate workflows and provide detailed analytics.</p>                  
                 </div>
-                <div class="right-column">
-                    <h3>A bit about me</h3>
-                    <p>
-                        Hi, I'm Adrian Twarog, a designer and developer who creates educational content on YouTube to teach others about HTML, CSS, and JavaScript. I'm interested in AI topics, which is why I also add things like ChatGPT into my projects these days!
-                    </p>
-                    <p>
-                        I'm currently working on a project that uses Azure AI to create a chatbot that can help answer questions about web development. I'm also working on a project that uses React and Next.js to create a portfolio website design that looks good.
-                    </p>
-                </div>
+              </div>              
+              <div class="card-back">
+                <h2>About ToneCraft</h2>
+                <p>
+                  ToneCraft uses advanced ML techniques to improve automation and optimize analytics for businesses.
+                </p>
+                <ul>
+                  <li>Technologies: React, TensorFlow</li>
+                  <li>Duration: 4 months</li>
+                  <li>Impact: Improved workflow efficiency by 30%</li>
+                </ul>
+                <div class="external-links">
+                    <a href="https://github.com" target="_blank">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.example.com" target="_blank">
+                      <i class="fas fa-globe" aria-hidden="true"></i>
+                    </a>
+                  </div>
+              </div>
             </div>
-        </section>
-		<section class="work-experience container">
-			<h2>
-				<small>Recent</small>
-				Work Experience
-			</h2>
-			<div class="jobs">
-				<article>
-					<figure>
-						<div>
-							<img src="./Images/Ozibook.jpg" alt="Workplace 1 - YouTube Creator" width="100%" />
-							<figcaption>
-								Workplace - 1 YouTube Creator
-							</figcaption>
-						</div>
-					</figure>
-					<h3>YouTube Content Creator</h3>
-					<div>2020-current</div>
-					<p>Content creation online teaching people about how to code using HTML, CSS, JS.</p>
-				</article>
-				<article>
-					<figure>
-						<div>
-							<img src="./Images/Screenshot 2024-11-30 231722.png" alt="Workplace 2 - Moshi Moshi Marketing" width="100%" />
-							<figcaption>
-								Workplace - Moshi Moshi Marketing
-							</figcaption>
-						</div>
-					</figure>
-					<h3>Moshi Moshi Marketing</h3>
-					<div>20018-2020</div>
-					<p>Marketing agency building websites and programming them from the ground up. </p>
-				</article>
-				<article>
-					<figure>
-						<div>
-							<img src="./imgs/workplace-3.jpg" alt="Workplace 3 - Chamber of Commerce" width="100%" />
-							<figcaption>
-								Workplace - Chamber of Commerce
-							</figcaption>
-						</div>
-					</figure>
-					<h3>Chamber of Commerce</h3>
-					<div>2013-2018</div>
-					<p>A small to large business organisation that helps facilitate advice and support.</p>
-				</article>
-				
-			</div>
-		</section>
-    </main>
-</body>
+          </div>
+      
+          
+          <div class="cta">
+            <div class="cta-inner">              
+              <div class="card-front">
+                <img
+                  src="https://images.unsplash.com/photo-1569762825621-2dab96140a1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDkxMQ&ixlib=rb-1.2.1&q=80&w=400"
+                  alt="RouteSnap"
+                />
+                <div class="cta__text-column">
+                  <h2>RouteSnap</h2>
+                  <p>This platform uses clustering and path optimization to streamline trip planning.</p>                  
+                </div>
+              </div>              
+              <div class="card-back">
+                <h2>About RouteSnap</h2>
+                <p>
+                  RouteSnap combines map optimization techniques and AI to simplify travel planning.
+                </p>
+                <ul>
+                  <li>Technologies: Node.js, Google Maps API</li>
+                  <li>Duration: 6 months</li>
+                  <li>Impact: Saved 20% travel time for users</li>
+                </ul>
+                <div class="external-links">
+                    <a href="https://github.com" target="_blank">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.example.com" target="_blank">
+                      <i class="fas fa-globe" aria-hidden="true"></i>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
+  </body>
 </html>
